@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Calc {
+    public static void main(String[] args) {
+        System.out.println("1-Add \n2-Substract \n3-Multiply \n4-Divide");
+        System.out.println("Chooese an Operator : ");
+        Scanner scan= new Scanner(System.in);
+        int operator=scan.nextInt();
+        System.out.print("Enter an first no : ");
+        int n1=scan.nextInt();
+        System.out.print("Enter an second no : ");
+        int n2=scan.nextInt();        
+        int result=0;
+        switch(operator){
+            case 1:
+                 result=n1+n2;
+                 break;
+            case 2:
+                 result=n1-n2;
+                 break;
+            case 3:
+                 result=n1*n2;
+                 break;
+            case 4:
+                 result=n1/n2;
+                 break;
+        }
+        System.out.println("Result is : "+result);
+    }
+}
